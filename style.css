@@ -1,0 +1,553 @@
+/* =================== ALL Root Css  Style Here Start ===================  */
+
+html,
+body {
+
+     overflow-x: hidden;
+}
+/* 
+* {
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display SC', serif;
+    font-family: 'Roboto', sans-serif;
+    } */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;400&family=Playfair+Display+SC&family=Playfair+Display:wght@400;500&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
+
+
+
+
+
+
+/* Sites all colors */
+:root {
+
+    --bg-black: #000000;
+    --blend-bg:rgba(0, 0, 0, 0.384);
+    --blend-bg-img:rgba(251, 255, 0, 0.986);
+    --txt-white:white;
+    --text-yello:rgb(255, 208, 0);
+    
+ /* next */
+
+ --bg-blue:rgb(9, 9, 56);
+
+}
+
+
+/* nav start */
+
+nav{
+    background-color: var(--bg-black);
+}
+
+/* color switcher */
+
+
+.color-switcher{
+    position: fixed;
+    bottom:25px;
+    left:-250px;
+    background-color: rgb(255, 255, 255);
+    z-index: 200;
+    padding: 10px 5px;
+    
+}
+
+
+.color-switcher.active{
+
+    left:0px;
+}
+
+.color-switcher .switcher-btn{
+
+    position: absolute;
+    bottom: 0;
+
+    right: -40px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--main);
+    padding: 5px;
+
+
+}
+
+.color-switcher .switcher-btn i{
+
+    animation:  rotate 2s linear infinite;
+    font-size: 30px;
+    
+}
+
+
+@keyframes rotate{
+
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+
+.color-switcher .theme-button-container{
+
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+}
+
+.color-switcher .theme-button-container .them-buttons{
+
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+
+/* nav end */
+/*============================Block-1 css start============== */
+
+.block-1 .top-button{
+    position: fixed;
+   
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    z-index: 100;
+    
+}
+
+
+.block-1 .top-button i{
+    color:  white;
+    background-color:var(--bg-black);
+    border-radius: 50%;
+}
+.block-1 .top-button i:hover{
+    color: rgb(255, 153, 0);
+}
+.block-1{
+     position: relative;
+
+    background-image: url("images/travel/aravind-kumar-uBoEykOGZY8-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blend-bg);
+    background-blend-mode: darken;
+    color: var(--txt-white); 
+}
+
+.heigh-light{
+    color: var(--text-yello);
+    border-top: 3px solid white;
+}
+/*============================Block-1 css end============== */
+
+
+
+
+
+
+
+
+/*============================Block-2 css start============== */
+
+.block-2{
+
+    background-color: var(--bg-black);
+    color: var(--txt-white);
+    padding-top: 2rem;    
+}
+
+
+/*============================Block-2 css end============== */
+
+
+/*============================Block-3 css start============== */
+
+.block-3{
+    background-image: url("images/travel/luca-bravo-O453M2Liufs-unsplash.jpg");
+    background-color: var(--blend-bg-img);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position:center;
+     color:var(--txt-white);
+      height: 500px;
+      background-attachment: fixed;
+     
+      
+}
+
+.block-3-icon a{
+
+    font-size:50px;
+    color: white;
+}
+.block-3-icon a:hover{
+    color: rgb(255, 187, 0);
+}
+
+.block-3 span{
+    font-size: 40px;
+}
+/*============================Block-3 css end============== */
+
+/*============================Block-4 css start============== */
+.card {
+    margin-bottom: 20px;
+  }
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .card-text {
+    margin-bottom: 10px;
+  }
+
+  .block-4{
+
+padding: 2rem 0px;
+
+
+
+  }
+  
+  .fa-star,.fa-star-half-stroke{
+      color: rgb(255, 208, 0);
+  }
+
+  .hr-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hr-text::before,
+  .hr-text::after {
+    content: "";
+    flex-grow: 1;
+    background-color: #ccc;
+    height: 1px;
+    margin: 0 10px;
+    
+  }
+
+  .hr-text span {
+    font-weight: bold;
+    color: #555;
+  }
+
+/*============================Block-4 css end============== */
+
+
+/*============================Block-5 css start============== */
+
+.block-5{
+
+    padding: 5rem 0px;
+    background-color:var(--bg-black);
+    color: var(--txt-white);
+}
+
+.accordion-item i{
+    color: rgb(255, 217, 0);
+}
+.accordion-item{
+    background-image: url("images/travel/luca-bravo-O453M2Liufs-unsplash.jpg");
+    background-color: rgba(0, 0, 0, 0.411);
+    background-blend-mode: darken;
+    background-size: cover;
+     background-position: center;
+    border: none;
+    color: white;
+    background-attachment: fixed;
+}
+/*============================Block-5 css end============== */
+
+
+/*============================Block-6 css start============== */
+
+.block-6{
+    margin-top: 1px;
+padding: 4rem 0px;
+background-image:url("images/travel/beqa-shavidze-paswG7lTuJ8-unsplash.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom;
+background-color: var(--blend-bg-img);
+background-blend-mode: darken;
+color: var(--txt-white);
+
+
+
+}
+.block-6 .media-icon i{
+    color:yellow;
+    font-size: 30px;
+    padding: 6px;
+}
+.block-6 .media-icon a:hover{
+background-color: black;
+}
+.block-6 .media-icon a{
+  
+    background-color: white;
+    border-radius: 50%;
+     padding: 4px;
+
+}
+/*============================Block-6 css end============== */
+ 
+
+/*============================Block-7 css start============== */
+
+.block-7{
+   
+    padding:2rem ;
+   
+    
+ 
+    
+}
+
+
+/*============================Block-7 css end============== */
+
+
+/*============================Block-8 css start============== */
+
+
+/* BLOCK-8 CSS IS EMPTY */
+/*============================Block-8 css end============== */
+
+
+
+/*============================Block-9 css start============== */
+
+.block-9{
+
+    padding: 4rem 0px;
+}
+/*============================Block-9 css end============== */
+
+
+
+/*============================Block-10 css start============== */
+
+.block-10{
+
+    padding: 4rem 0px;
+    background-color: var(--bg-black);
+    color:var(--txt-white);
+}
+
+/*============================Block-10 css end============== */
+
+/*============================Block-11 css start============== */
+
+.footer {
+
+      
+    background-color: var(--bg-black);
+    color: var(--txt-white);
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .footer .media-icon i{
+    color:yellow;
+    font-size: 30px;
+    padding: 6px;
+}
+.footer .media-icon a:hover{
+background-color: black;
+}
+.footer .media-icon a{
+  
+    background-color: white;
+    border-radius: 50%;
+     padding: 4px;
+
+}
+/*============================Block-11 css end============== */
+
+/*============================Block-12 css start============== */
+/*============================Block-12 css end============== */
+
+/*============================Block-13 css start============== */
+/*============================Block-13css end============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================== Media QUARY RESPONSIVE SIZE start==========================   */
+
+@media screen and (min-width: 992px) {
+    .navbar-nav .nav-link:hover {
+      border-bottom: 3px solid white;
+    }
+  }
+
+/* Default styles for heading tags */
+h1{
+    font-size: 46px;
+    font-family: 'Playfair Display', serif;
+
+}
+h2{
+    font-size: 36px;
+    font-family: 'Playfair Display SC', serif;
+
+}
+h3{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+h4{
+    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+
+}
+h5 {
+  
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Default styles for paragraph tags */
+p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+@media (max-widht:990px){
+
+   
+  
+     
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    h1{
+        font-size: 36px;
+        font-family: 'Playfair Display', serif;
+    
+    }
+    h2{
+        font-size: 30px;
+        font-family: 'Playfair Display SC', serif;
+    
+    }
+    h3{
+        font-size: 26px;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    
+    
+    h4{
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    h5 {
+      
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    /* Default styles for paragraph tags */
+    p {
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+
+    p {
+        font-size: 14px;
+        /* Adjusted font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+
+
+
+    h1{
+        font-size: 30x;
+        font-family: 'Playfair Display', serif;
+    
+    }
+    h2{
+        font-size: 26px;
+        font-family: 'Playfair Display SC', serif;
+    
+    }
+    h3{
+        font-size: 20x;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    
+    
+    h4{
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    h5 {
+      
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    /* Default styles for paragraph tags */
+    p {
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+}
+
+/* =================== Media QUARY RESPONSIVE SIZE start==========================   */
